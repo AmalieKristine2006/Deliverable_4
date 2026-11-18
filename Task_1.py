@@ -58,4 +58,17 @@ class Temperature:
     def __str__(self) -> str:
         return f"{self.value:.2f} {self.unit}"
 
-        
+    #Skal sammenligne to temperaturer på tvers av enheter
+    def compare(self, other: Temperature) -> int:
+        if not isinstance(other, Temperature):
+            return NotImplemented
+        #gjør om begge temperaturene til celsius for å sammenligne dem
+        self_celsius = self.to_celsius()
+        other_celsius = other.to_celsius()
+        #sammenligner dem og returnerer svaret
+        if self_celsius < other_celsius:
+            return f"{self} is less than {other}"
+        elif self_celsius > other_celsius:
+            return f"{self} is greater than {other}"
+        else:
+            return f"{self} is equal to {other}"
