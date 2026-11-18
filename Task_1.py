@@ -22,7 +22,12 @@ class Temperature:
             return self.value - 273.15
 
     def to_fahrenheit(self):
-        pass
+        if self.unit == "C":
+            return (self.value * 9 / 5) + 32
+        elif self.unit == "F":
+            return self.value
+        elif self.unit == "K":
+            return (self.value - 273.15) * 9 / 5 + 32
 
     def to_kelvin(self):
         pass
