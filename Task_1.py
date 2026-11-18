@@ -12,3 +12,16 @@ class Temperature:
             raise ValueError("Temperature cannot be below absolute zero")
         self.value = value
         self.unit = unit
+
+    def to_celsius(self):
+        pass
+
+    def to_fahrenheit(self):
+        pass
+
+    def to_kelvin(self):
+        pass
+
+    def convert_to(self, target_unit: str): -> Temperature
+
+        
