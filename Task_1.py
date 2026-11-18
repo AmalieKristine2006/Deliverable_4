@@ -14,7 +14,12 @@ class Temperature:
         self.unit = unit
 
     def to_celsius(self):
-        pass
+        if self.unit == "C":
+            return self.value
+        elif self.unit == "F":
+            return (self.value - 32) * 5 / 9
+        elif self.unit == "K":
+            return self.value - 273.15
 
     def to_fahrenheit(self):
         pass
