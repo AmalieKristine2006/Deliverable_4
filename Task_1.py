@@ -30,7 +30,12 @@ class Temperature:
             return (self.value - 273.15) * 9 / 5 + 32
 
     def to_kelvin(self):
-        pass
+        if self.unit == "C":
+            return self.value + 273.15
+        elif self.unit == "F":
+            return (self.value - 32) * 5 / 9 + 273.15
+        elif self.unit == "K":
+            return self.value
 
     def convert_to(self, target_unit: str): -> Temperature
 
