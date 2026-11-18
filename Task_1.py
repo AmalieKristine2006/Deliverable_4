@@ -37,6 +37,19 @@ class Temperature:
         elif self.unit == "K":
             return self.value
 
-    def convert_to(self, target_unit: str): -> Temperature
+    def convert_to(self, target_unit: str) -> Temperature:
+        #Gjør om target_unit til stor bokstav
+        target_unit = target_unit.upper()
+        #Gjør omtrent det samme som i init, men for target_unit. (Høre med lærer om det er riktig)
+        if target_unit not in ["C", "F", "K"]:
+            raise ValueError("Target unit must be 'C', 'F', or 'K'")
+        if target_unit == "C":
+            return Temperature(self.to_celsius(), "C")
+        elif target_unit == "F":
+            return Temperature(self.to_fahrenheit(), "F")
+        elif target_unit == "K":
+            return Temperature(self.to_kelvin(), "K")
 
-        
+    
+
+
