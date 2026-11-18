@@ -13,6 +13,16 @@ class Temperature:
         self.value = value
         self.unit = unit
 
+    # "Use a tolerance of 1e-9 for floating-point value comparisons"
+    def tolerance(self, other: Temperature) -> bool:
+        # Hvis other ikke er en temp sender den feilmelding
+        if not isinstance(other, Temperature):
+            return NotImplemented
+        #transformerer dem til celsius. Enklere å sammenligne dem da
+        self_celsius = self.to_celsius()
+        other_celsius = other.to_celsius()
+        return abs(self_celsius - other_celsius) <= 10e-9
+
     def to_celsius(self):
         if self.unit == "C":
             return self.value
