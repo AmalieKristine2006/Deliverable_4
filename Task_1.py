@@ -50,6 +50,8 @@ class Temperature:
         elif target_unit == "K":
             return Temperature(self.to_kelvin(), "K")
 
+    def __repr__(self) -> str :
+        return f"Temperature({self.value}, {self.unit})"
     
 
 
