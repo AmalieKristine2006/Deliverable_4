@@ -52,3 +52,11 @@ class Fraction:
 
         return self.numerator * other.denominator >= self.denominator * other.numerator
 
+    def __add__(self, other : 'Fraction')-> 'Fraction':
+        if not isinstance(other, Fraction):
+            return NotImplemented
+
+        new_numerator = self.numerator * other.denominator + self.denominator * other.numerator
+        new_denominator = self.denominator * other.denominator
+
+        return Fraction(new_numerator, new_denominator)
