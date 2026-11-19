@@ -19,3 +19,6 @@ def test_invalid_denominator_type()-> None:
     with pytest.raises(TypeError):
         Fraction(1, "a")
 
+def test_invalid_numerator_type()-> None:
+    with pytest.raises(TypeError):
+        Fraction("a", 1)
