@@ -21,3 +21,15 @@ class Fraction:
             return NotImplemented
 
         return self.numerator * other.denominator == self.denominator * other.numerator
+
+    def __ne__(self, other):
+        if not isinstance(other, Fraction):
+            return NotImplemented
+
+        return self.numerator * other.denominator != self.denominator * other.numerator
+
+    def __lt__(self, other):
+        if not isinstance(other, Fraction):
+            return NotImplemented
+
+        return self.numerator * other.denominator < self.denominator * other.numerator
