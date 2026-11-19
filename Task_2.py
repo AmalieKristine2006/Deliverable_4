@@ -1,5 +1,5 @@
 class Fraction:
-    def __init__(self, numerator, denominator):
+    def __init__(self, numerator: int, denominator: int)-> None: 
         # Check if numerator is an integer
         if type(numerator) != int:
             raise TypeError("Numerator must be an integer")
@@ -16,31 +16,31 @@ class Fraction:
         self.numerator = numerator
         self.denominator = denominator  
 
-    def __eq__(self, other):
+    def __eq__(self, other)-> bool:
         if not isinstance(other, Fraction):
             return NotImplemented
 
         return self.numerator * other.denominator == self.denominator * other.numerator
 
-    def __ne__(self, other):
+    def __ne__(self, other : 'Fraction')-> bool:
         if not isinstance(other, Fraction):
             return NotImplemented
 
         return self.numerator * other.denominator != self.denominator * other.numerator
 
-    def __lt__(self, other):
+    def __lt__(self, other : 'Fraction')-> bool:
         if not isinstance(other, Fraction):
             return NotImplemented
 
         return self.numerator * other.denominator < self.denominator * other.numerator
 
-    def __le__(self, other):
+    def __le__(self, other : 'Fraction')-> bool:
         if not isinstance(other, Fraction):
             return NotImplemented
 
         return self.numerator * other.denominator <= self.denominator * other.numerator
 
-    def __gt__(self, other):
+    def __gt__(self, other : 'Fraction')-> bool:
         if not isinstance(other, Fraction):
             return NotImplemented
 
