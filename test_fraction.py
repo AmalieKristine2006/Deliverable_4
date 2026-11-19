@@ -22,3 +22,19 @@ def test_invalid_denominator_type()-> None:
 def test_invalid_numerator_type()-> None:
     with pytest.raises(TypeError):
         Fraction("a", 1)
+
+def test_addition()-> None:
+    f1 = Fraction(1, 2)
+    f2 = Fraction(1, 3)
+    result = f1 + f2
+
+    assert result.numerator == 5
+    assert result.denominator == 6
+
+def test_subtraction()-> None:
+    f1 = Fraction(1, 2)
+    f2 = Fraction(1, 3)
+    result = f1 - f2
+
+    assert result.numerator == 1
+    assert result.denominator == 6
