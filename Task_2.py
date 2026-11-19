@@ -45,3 +45,10 @@ class Fraction:
             return NotImplemented
 
         return self.numerator * other.denominator > self.denominator * other.numerator
+
+    def __ge__(self, other : 'Fraction')-> bool:
+        if not isinstance(other, Fraction):
+            return NotImplemented
+
+        return self.numerator * other.denominator >= self.denominator * other.numerator
+
