@@ -78,3 +78,12 @@ class Fraction:
         new_denominator = self.denominator * other.denominator
 
         return Fraction(new_numerator, new_denominator)
+
+    def __truediv__(self, other : 'Fraction')-> 'Fraction':
+        if not isinstance(other, Fraction):
+            return NotImplemented
+
+        new_numerator = self.numerator * other.denominator
+        new_denominator = self.denominator * other.numerator
+
+        return Fraction(new_numerator, new_denominator)
