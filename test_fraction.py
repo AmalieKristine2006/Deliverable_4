@@ -55,6 +55,11 @@ def test_division() -> None:
     assert result.numerator == 3
     assert result.denominator == 2
 
+def test_division_by_zero() -> None:
+    f1 = Fraction(1, 2)
+    f2 = Fraction(0, 3)
 
+    with pytest.raises(ZeroDivisionError):
+        f1 / f2
 
 
