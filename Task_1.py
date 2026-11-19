@@ -10,8 +10,8 @@ class Temperature:
             raise ValueError("Unit must be 'C', 'F', or 'K'")
         if value < 0 and unit == "K":
             raise ValueError("Temperature cannot be below absolute zero")
-        self.value = value
-        self.unit = unit
+        self._value = value
+        self._unit = unit
 
     # "Use a tolerance of 1e-9 for floating-point value comparisons"
     def tolerance(self, other: Temperature) -> bool:
