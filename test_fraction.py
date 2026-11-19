@@ -38,3 +38,21 @@ def test_subtraction()-> None:
 
     assert result.numerator == 1
     assert result.denominator == 6
+
+def test_multiplication() -> None:
+    f1 = Fraction(1, 2)
+    f2 = Fraction(1, 3)
+    result = f1 * f2
+
+    assert result.numerator == 1
+    assert result.denominator == 6
+
+def test_division() -> None:
+    f1 = Fraction(1, 2)
+    f2 = Fraction(1, 3)
+    result = f1 / f2
+
+    assert result.numerator == 3
+    assert result.denominator == 2
+
+
