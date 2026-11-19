@@ -2,7 +2,7 @@
 
 class Temperature:
     # Skal ta imot alle typer, og sjekke om de er gyldige
-    def __init__(self, value, unit):
+    def __init__(self, value, unit: "C"):
         #Bokstaven må være stor
         unit = unit.upper()
         #Sjeeker om enheten er riktig
