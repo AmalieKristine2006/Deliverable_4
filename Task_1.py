@@ -10,6 +10,10 @@ class Temperature:
             raise ValueError("Unit must be 'C', 'F', or 'K'")
         if value < 0 and unit == "K":
             raise ValueError("Temperature cannot be below absolute zero")
+        if value < -273.15 and unit == "C":
+            raise ValueError("Temperature cannot be below absolute zero")
+        if value < -459.67 and unit == "F":
+            raise ValueError("Temperature cannot be below absolute zero")
         self._value = value
         self._unit = unit
 
