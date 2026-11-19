@@ -23,6 +23,15 @@ class Temperature:
         other_celsius = other.to_celsius()
         return abs(self_celsius - other_celsius) <= 10e-9
 
+    @property
+    def value(self):
+        return self._value
+
+    @property
+    def unit(self):
+        return self._unit
+
+    
     def to_celsius(self):
         if self.unit == "C":
             return self.value
