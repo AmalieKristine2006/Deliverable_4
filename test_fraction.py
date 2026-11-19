@@ -89,4 +89,8 @@ def test_greater_than() -> None:
 def test_greater_than_or_equal() -> None:
     assert Fraction(2, 4) >= Fraction(1, 2)
 
+def test_comparison_with_non_fraction() -> None:
+    f = Fraction(1, 2)
 
+    assert f.__eq__(5) is NotImplemented
+    assert f.__lt__(5) is NotImplemented
