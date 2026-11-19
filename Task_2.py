@@ -69,3 +69,12 @@ class Fraction:
         new_denominator = self.denominator * other.denominator
 
         return Fraction(new_numerator, new_denominator)
+
+    def __mul__(self, other : 'Fraction')-> 'Fraction':
+        if not isinstance(other, Fraction):
+            return NotImplemented
+
+        new_numerator = self.numerator * other.numerator
+        new_denominator = self.denominator * other.denominator
+
+        return Fraction(new_numerator, new_denominator)
