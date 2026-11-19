@@ -62,4 +62,31 @@ def test_division_by_zero() -> None:
     with pytest.raises(ZeroDivisionError):
         f1 / f2
 
+def test_equality() -> None:
+    f1 = Fraction(1, 2)
+    f2 = Fraction(2, 4)
+
+    assert f1 == f2
+
+def test_inequality() -> None:
+    f1 = Fraction(1, 2)
+    f2 = Fraction(1, 3)
+
+    assert f1 != f2
+
+def test_less_than() -> None:
+    assert Fraction(1, 2) < Fraction(3, 4)
+
+
+def test_less_than_or_equal() -> None:
+    assert Fraction(1, 2) <= Fraction(2, 4)
+
+
+def test_greater_than() -> None:
+    assert Fraction(3, 4) > Fraction(1, 2)
+
+
+def test_greater_than_or_equal() -> None:
+    assert Fraction(2, 4) >= Fraction(1, 2)
+
 
