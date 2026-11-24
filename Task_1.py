@@ -25,7 +25,7 @@ class Temperature:
         #transform the temps to celsius so that they are easier to compare
         self_celsius = self.to_celsius()
         other_celsius = other.to_celsius()
-        return abs(self_celsius - other_celsius) <= 10e-9
+        return abs(self_celsius - other_celsius) <= 1e-9
 
     @property
     def value(self):
@@ -89,9 +89,9 @@ class Temperature:
         self_celsius = self.to_celsius()
         other_celsius = other.to_celsius()
         #Compares and returns the answer
-        if self_celsius < other_celsius:
-            return f"{self} is less than {other}"
-        elif self_celsius > other_celsius:
-            return f"{self} is greater than {other}"
-        else:
+        if self.tolerance(other):
             return f"{self} is equal to {other}"
+        elif self_celsius < other_celsius:
+            return f"{self} is less than {other}"
+        else:
+            return f"{self} is greater than {other}""
