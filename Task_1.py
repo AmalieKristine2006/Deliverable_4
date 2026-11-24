@@ -94,4 +94,4 @@ class Temperature:
         elif self_celsius < other_celsius:
             return f"{self} is less than {other}"
         else:
-            return f"{self} is greater than {other}""
+            return f"{self} is greater than {other}"
