@@ -79,7 +79,7 @@ class Temperature:
 
     # "Returns an unambiguous representation"
     def __repr__(self) -> str :
-        return f"Temperature({self.value}, {self.unit})"
+        return f"Temperature({float(self.value)}, '{self.unit}')"
 
     # "Returns a human-readable string"
     def __str__(self) -> str:
