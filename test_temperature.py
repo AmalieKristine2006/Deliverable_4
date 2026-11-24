@@ -95,4 +95,4 @@ def test_cross_unit_comparisons():
 def test_formatting():
     t = Temperature(25, "C")
     assert str(t) == "25.00 C"
-    assert repr(t) == "Temperature(25.0, C)"
+    assert repr(t) == "Temperature(25.0, 'C')"
