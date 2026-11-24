@@ -4,7 +4,7 @@ class Temperature:
     # Should be able to take any temperature value and unit and check wheter it is an approved unit and value
     def __init__(self, value: float, unit: str = "C"):
         #The unit needs to be uppercase
-        unit = unit.upper()
+        self.unit = unit.upper()
         #Checks that the unit is correct
         if unit not in ["C", "F", "K"]:
             raise ValueError("Unit must be 'C', 'F', or 'K'")
