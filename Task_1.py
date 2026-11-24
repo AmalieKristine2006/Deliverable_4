@@ -44,9 +44,9 @@ class Temperature:
         if self.unit == "C":
             return self.value
         elif self.unit == "F":
-            return round((self.value - 32) * 5 / 9)
+            return (self.value - 32) * 5 / 9
         elif self.unit == "K":
-            return round(self.value - 273.15)
+            return self.value - 273.15
 
     def to_fahrenheit(self):
         if self.unit == "C":
@@ -58,9 +58,9 @@ class Temperature:
 
     def to_kelvin(self):
         if self.unit == "C":
-            return round(self.value + 273.15)
+            return self.value + 273.15
         elif self.unit == "F":
-            return round((self.value - 32) * 5 / 9 + 273.15)
+            return (self.value - 32) * 5 / 9 + 273.15
         elif self.unit == "K":
             return self.value
 
