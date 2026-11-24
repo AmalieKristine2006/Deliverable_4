@@ -50,7 +50,7 @@ def test_conversion_accuracy_absolute_zero():
     assert t_c.to_celsius() == t_f.to_celsius() == t_k.to_celsius()
 
 def test_conversion_accuracy_Celsius_Fahrenheit():
-    # Celsius–Fahrenheit crossover
+    # Celsius–Fahrenheit crossover 
     t_c = Temperature(-40, "C")
     t_f = Temperature(-40, "F")
     t_k = Temperature(233.15, "K")
@@ -94,5 +94,5 @@ def test_cross_unit_comparisons():
 # FOrmatting test
 def test_formatting():
     t = Temperature(25, "C")
-    assert str(t) == "25.0 C"
+    assert str(t) == "25.00 C"
     assert repr(t) == "Temperature(value=25.0, unit='C')"
