@@ -1,11 +1,11 @@
 
 
 class Temperature:
-    # Skal ta imot alle typer, og sjekke om de er gyldige
+    # Should be able to take any temperature value and unit and check wheter it is an approved unit and value
     def __init__(self, value: float, unit: str = "C"):
-        #Bokstaven må være stor
+        #The unit needs to be uppercase
         unit = unit.upper()
-        #Sjeeker om enheten er riktig
+        #Checks that the unit is correct
         if unit not in ["C", "F", "K"]:
             raise ValueError("Unit must be 'C', 'F', or 'K'")
         if value < 0 and unit == "K":
@@ -19,10 +19,10 @@ class Temperature:
 
     # "Use a tolerance of 1e-9 for floating-point value comparisons"
     def tolerance(self, other: Temperature) -> bool:
-        # Hvis other ikke er en temp sender den feilmelding
+        # If other isnt a temp it sends an errormessage
         if not isinstance(other, Temperature):
             return NotImplemented
-        #transformerer dem til celsius. Enklere å sammenligne dem da
+        #transform the temps to celsius so that they are easier to compare
         self_celsius = self.to_celsius()
         other_celsius = other.to_celsius()
         return abs(self_celsius - other_celsius) <= 10e-9
@@ -61,9 +61,9 @@ class Temperature:
             return self.value
 
     def convert_to(self, target_unit: str) -> Temperature:
-        #Gjør om target_unit til stor bokstav
+        #Make target_unit an uppercase letter
         target_unit = target_unit.upper()
-        #Gjør omtrent det samme som i init, men for target_unit. (Høre med lærer om det er riktig)
+        #Does about the same as init, but for target_unit
         if target_unit not in ["C", "F", "K"]:
             raise ValueError("Target unit must be 'C', 'F', or 'K'")
         if target_unit == "C":
@@ -81,14 +81,14 @@ class Temperature:
     def __str__(self) -> str:
         return f"{self.value:.2f} {self.unit}"
 
-    #Skal sammenligne to temperaturer på tvers av enheter
+    #Compares units despite being of differnt units
     def compare(self, other: Temperature) -> int:
         if not isinstance(other, Temperature):
             return NotImplemented
-        #gjør om begge temperaturene til celsius for å sammenligne dem
+        #Turns them both into celsius to compare them
         self_celsius = self.to_celsius()
         other_celsius = other.to_celsius()
-        #sammenligner dem og returnerer svaret
+        #Compares and returns the answer
         if self_celsius < other_celsius:
             return f"{self} is less than {other}"
         elif self_celsius > other_celsius:
