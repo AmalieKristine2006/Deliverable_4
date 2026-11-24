@@ -89,7 +89,7 @@ def test_cross_unit_comparisons():
     t1 = Temperature(0, "C")
     t2 = Temperature(32, "F")
     t3 = Temperature(273.15, "K")
-    assert 
+    assert t1 == t2 == t3
 
 # FOrmatting test
 def test_formatting():
