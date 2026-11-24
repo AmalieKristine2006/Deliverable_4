@@ -4,7 +4,7 @@ class Temperature:
     # Should be able to take any temperature value and unit and check wheter it is an approved unit and value
     def __init__(self, value: float, unit: str = "C"):
         #The unit needs to be uppercase
-        self.unit = unit.upper()
+        unit = unit.upper()
         #Checks that the unit is correct
         if unit not in ["C", "F", "K"]:
             raise ValueError("Unit must be 'C', 'F', or 'K'")
@@ -26,6 +26,10 @@ class Temperature:
         self_celsius = self.to_celsius()
         other_celsius = other.to_celsius()
         return abs(self_celsius - other_celsius) <= 1e-9
+
+    def __eq__(self, other):
+        # Uses the tolerancefunction automatically when comparing temps
+        return self.tolerance(other)
 
     @property
     def value(self):
