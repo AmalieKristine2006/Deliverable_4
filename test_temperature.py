@@ -91,4 +91,8 @@ def test_cross_unit_comparisons():
     t3 = Temperature(273.15, "K")
     assert 
 
-
+# FOrmatting test
+def test_formatting():
+    t = Temperature(25, "C")
+    assert str(t) == "25.0 C"
+    assert repr(t) == "Temperature(value=25.0, unit='C')"
