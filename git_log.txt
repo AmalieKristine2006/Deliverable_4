@@ -1,0 +1,65 @@
+* bbc5140 - Amalie Fyhn, 2 days ago : Everything is working!
+* 86fe8d9 - Amalie Fyhn, 2 days ago : Minor fix
+* d669cff - Amalie Fyhn, 2 days ago : edited test_formatting
+* d728f83 - Amalie Fyhn, 2 days ago : Still one error
+* 662d0d9 - Amalie Fyhn, 2 days ago : corrected aproximation
+* c2143fc - Amalie Fyhn, 2 days ago : One error left
+* fe86840 - Amalie Fyhn, 2 days ago : Rounded the coversions
+* c53de6a - Amalie Fyhn, 2 days ago : added __eq__
+* dfcf90f - Amalie Fyhn, 2 days ago : tiny fix
+* d91713a - Amalie Fyhn, 2 days ago : Minor fix
+* 34ab03f - Amalie Fyhn, 2 days ago : still an error
+* 016f204 - Amalie Fyhn, 2 days ago : Added tolerance in the compare-function
+* 4d0144f - Amalie Fyhn, 2 days ago : ran again
+* 86726b2 - Amalie Fyhn, 2 days ago : Still gettingg errors
+* 9ad19fc - Amalie Fyhn, 2 days ago : Checked the tests
+* 24a5ebb - Amalie Fyhn, 2 days ago : renamed
+* bd07f2f - Amalie Fyhn, 2 days ago : Translated comments to english
+* d353f1d - Amalie Fyhn, 2 days ago : Tiny fix
+* a22a0db - Amalie Fyhn, 2 days ago : 1 error found?
+* 2a38883 - Amalie Fyhn, 2 days ago : Current test-output
+* b946fc9 - Amalie Fyhn, 2 days ago : Finished tests?
+* b35799a - Vanessa Tryba, 7 days ago : added jupyter notebook file
+* efee6fc - Vanessa Tryba, 7 days ago : more tests
+* d7e2b1e - Vanessa Tryba, 7 days ago : added and passed another tests
+* 6a7a927 - Vanessa Tryba, 7 days ago : fix on __truediv__
+* f27b400 - Vanessa Tryba, 7 days ago : test failed
+* 49f5d18 - Vanessa Tryba, 7 days ago : fix
+* fe025a5 - Vanessa Tryba, 7 days ago : another 2 tests added and passed
+* 2b2234b - Vanessa Tryba, 7 days ago : added and passed 2 tests
+* c8a3c05 - Vanessa Tryba, 7 days ago : added and passed 2 tests
+* a6f6f4c - Vanessa Tryba, 7 days ago : type hints added
+* e0c7547 - Vanessa Tryba, 7 days ago : made and passed 3 tests
+* d9450f6 - Vanessa Tryba, 7 days ago : test fraction file added
+* 2a57d40 - Vanessa Tryba, 7 days ago : __truediv__ added
+* f722cdf - Vanessa Tryba, 7 days ago : added __mul__
+* 2463185 - Vanessa Tryba, 7 days ago : __sub__ added
+* a8f28fd - Vanessa Tryba, 7 days ago : __add__ added
+* d3de5d6 - Vanessa Tryba, 7 days ago : __ge__ added
+* 54e240c - Vanessa Tryba, 7 days ago : type hints
+* d192840 - Vanessa Tryba, 7 days ago : __gt__ method done
+* e029738 - Vanessa Tryba, 7 days ago : __le__ method done
+* a114398 - Vanessa Tryba, 7 days ago : added __ne__ and __it__ method
+* faf201d - Vanessa Tryba, 7 days ago : added __eq__ method
+* 89aae9a - Vanessa Tryba, 7 days ago : first draft task 2
+* 0efa426 - Amalie Fyhn, 7 days ago : More tests
+* 0976bcb - Amalie Fyhn, 7 days ago : Created tests
+* 1d0d6e2 - Amalie Fyhn, 7 days ago : Absolute 0 handling improved
+* 54892cd - Amalie Fyhn, 7 days ago : Minor fix
+* 9b71590 - Amalie Fyhn, 7 days ago : default-value
+* 1340887 - Amalie Fyhn, 7 days ago : Minor fix
+* 2ff900d - Amalie Fyhn, 7 days ago : importerte pytest
+* 386afcb - Amalie Fyhn, 7 days ago : read-only attributes
+* 4a87e83 - Amalie Fyhn, 8 days ago : Created file
+* 9a7186f - Amalie Fyhn, 8 days ago : tolerance-function done?
+* 284b6dd - Amalie Fyhn, 8 days ago : compare-function done
+* 766afce - Amalie Fyhn, 8 days ago : __str__-function done
+* a2ec97b - Amalie Fyhn, 8 days ago : __repr__-function done
+* 958a146 - Amalie Fyhn, 8 days ago : Convert_to-function done?
+* 3c240f7 - Amalie Fyhn, 8 days ago : to-kelvin-function
+* 3294a1c - Amalie Fyhn, 8 days ago : to-fahrentheit-function
+* e789595 - Amalie Fyhn, 8 days ago : to-celsius-function
+* fabca87 - Amalie Fyhn, 8 days ago : Rough plan
+* 705949a - Amalie Fyhn, 8 days ago : Created the class and __init__-function
+* 0cfec2a - Amalie Fyhn, 8 days ago : Created files
+* 0f6a7c2 - AmalieKristine2006, 8 days ago : Initial commit
