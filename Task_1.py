@@ -1,4 +1,4 @@
-
+# Link to repositary: https://github.com/AmalieKristine2006/Deliverable_4
 
 class Temperature:
     # Should be able to take any temperature value and unit and check wheter it is an approved unit and value
